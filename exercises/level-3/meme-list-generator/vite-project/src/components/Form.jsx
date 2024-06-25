@@ -35,7 +35,9 @@ const handleChange = (e) => {
 const onSubmit = (e) =>  {
   e.preventDefault()
   console.log("click2")
-    setMemeList(prevList => [...prevList], memes)
+  const newMeme = {...memes, id: uuidv4() }
+    setMemeList(prevList => [...prevList, newMeme])
+
   }
 
   //fetching random meme
@@ -48,7 +50,7 @@ const onSubmit = (e) =>  {
      }));
   } 
   const displayMemes = memeList.map((memes) => (
-    <div>
+    <div key={memes._id}>
       <h2>{memes.topText}</h2>
       <h2>{memes.bottomText}</h2>
       <img src={memes.imgUrl}/>
@@ -90,7 +92,7 @@ console.log(memeList)
    </div>
 
   </form> 
-   <div>{displayMemes}</div>
+   <div key={memes._id}>{displayMemes}</div>
    </>
 
     )
