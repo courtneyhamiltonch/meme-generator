@@ -1,0 +1,16 @@
+.human{
+    display:grid;
+    background-color: rgb(180, 152, 223);
+    padding: 15px;
+    width: 500px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+   
+}
+.pet-name {
+    font-style: italic;
+}
+
+.pet-breed {
+    font-style: oblique;
+    font-weight: bold;
+}

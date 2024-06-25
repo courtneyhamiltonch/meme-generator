@@ -1,5 +1,5 @@
 // Returns numbers 5 and greater only
-/*var arr = [3, 6, 8, 2]
+var arr = [3, 6, 8, 2]
 var result = arr.filter(function(num){
     if(num >= 5)
     return true
@@ -38,4 +38,4 @@ var result = celebs.filter(function(person){
     if(person.age >= 18)
     return true
 })
-console.log(result)*/
+console.log(result)

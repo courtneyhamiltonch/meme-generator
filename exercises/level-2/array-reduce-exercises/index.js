@@ -1,5 +1,5 @@
 // Turn an array of numbers into a total of all the numbers
-/*var nums = [1,2,3]
+var nums = [1,2,3]
 var result1 = nums.reduce(function(final,num){
     final += num
     return final
